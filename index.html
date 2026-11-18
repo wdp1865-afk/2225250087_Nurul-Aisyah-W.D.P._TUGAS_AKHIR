@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Interaktif: Prisma Segitiga (Kelas 8)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Matematika Kelas 8: Prisma Segitiga</h1>
+        <p>Pahami konsep, jaring-jaring, kalkulator rumus, dan uji pemahamanmu dengan kuis interaktif!</p>
+    </header>
+
+    <main>
+        <!-- Bagian Konsep & Visual -->
+        <section class="card">
+            <h2>📖 Konsep Dasar & Bentuk Prisma</h2>
+            <p>Prisma segitiga adalah bangun ruang sisi datar yang memiliki alas dan tutup berbentuk segitiga yang kongruen, serta tiga sisi tegak berbentuk persegi panjang.</p>
+            
+            <Image src="image_agent_tag_10826136144563501319" alt="Ilustrasi Prisma Segitiga 3D" caption="Bentuk 3D Prisma Segitiga" />
+
+            <div class="formula-box" style="margin-top: 1.5rem;">
+                <p><strong>1. Volume Prisma:</strong></p>
+                <div class="formula">V = Luas Alas × Tinggi Prisma</div>
+                <small>*(Luas Alas Segitiga = ½ × alas segitiga × tinggi segitiga)*</small>
+            </div>
+
+            <div class="formula-box">
+                <p><strong>2. Luas Permukaan Prisma:</strong></p>
+                <div class="formula">LP = (2 × Luas Alas) + (Keliling Alas × Tinggi Prisma)</div>
+            </div>
+        </section>
+
+        <!-- Bagian Jaring-jaring Prisma -->
+        <section class="card">
+            <h2>📦 Jaring-Jaring Prisma Segitiga</h2>
+            <p>Jika sebuah prisma segitiga dibuka atau direntangkan, maka akan membentuk jaring-jaring yang terdiri dari:</p>
+            <ul class="net-list">
+                <li><strong>2 buah segitiga</strong> yang identik sebagai sisi alas dan tutup.</li>
+                <li><strong>3 buah persegi panjang</strong> yang saling berdampingan sebagai selimut atau sisi tegak prisma.</li>
+            </ul>
+        </section>
+
+        <!-- Bagian Kalkulator Interaktif -->
+        <section class="card">
+            <h2>🧮 Kalkulator Volume & Luas Permukaan</h2>
+            <p>Masukkan ukuran prisma segitiga (dalam cm):</p>
+            
+            <div class="grid-inputs">
+                <div class="input-group">
+                    <label for="sisiA">Sisi Alas Segitiga 1 (a):</label>
+                    <input type="number" id="sisiA" placeholder="Contoh: 3">
+                </div>
+                <div class="input-group">
+                    <label for="sisiB">Sisi Alas Segitiga 2 (b):</label>
+                    <input type="number" id="sisiB" placeholder="Contoh: 4">
+                </div>
+                <div class="input-group">
+                    <label for="sisiC">Sisi Alas Segitiga 3 (c):</label>
+                    <input type="number" id="sisiC" placeholder="Contoh: 5">
+                </div>
+                <div class="input-group">
+                    <label for="tinggiSegitiga">Tinggi Alas Segitiga (t<sub>a</sub>):</label>
+                    <input type="number" id="tinggiSegitiga" placeholder="Contoh: 4">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="tinggiPrisma">Tinggi Prisma (t<sub>p</sub>):</label>
+                <input type="number" id="tinggiPrisma" placeholder="Contoh: 10">
+            </div>
+
+            <button id="calcBtn">Hitung Volume & Luas Permukaan</button>
+            <div id="calcResult" class="result">Hasil perhitungan akan muncul di sini...</div>
+        </section>
+
+        <!-- Bagian Kuis Variasi Baru -->
+        <section class="card">
+            <h2>✍️ Kuis Latihan Interaktif</h2>
+            
+            <div class="quiz-question" id="q1-container">
+                <p><strong>Soal 1:</strong> Sebuah prisma segitiga memiliki luas alas 24 cm² dan tinggi prisma 10 cm. Berapakah volume prisma tersebut?</p>
+                <div class="quiz-options" data-q="1">
+                    <button class="quiz-btn" data-correct="false">120 cm³</button>
+                    <button class="quiz-btn" data-correct="true">240 cm³</button>
+                    <button class="quiz-btn" data-correct="false">340 cm³</button>
+                </div>
+                <p class="feedback" id="fb1"></p>
+            </div>
+
+            <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #e2e8f0;">
+
+            <div class="quiz-question" id="q2-container">
+                <p><strong>Soal 2:</strong> Berapa banyak sisi tegak (selimut) yang dimiliki oleh sebuah prisma segitiga?</p>
+                <div class="quiz-options" data-q="2">
+                    <button class="quiz-btn" data-correct="false">2 buah</button>
+                    <button class="quiz-btn" data-correct="true">3 buah</button>
+                    <button class="quiz-btn" data-correct="false">5 buah</button>
+                </div>
+                <p class="feedback" id="fb2"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Media Pembelajaran Matematika SMP Kelas 8</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
